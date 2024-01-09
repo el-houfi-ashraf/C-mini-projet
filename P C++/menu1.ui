@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="6.0">
+ <class>Menu</class>
+ <widget class="QDialog" name="Menu">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1120</width>
+    <height>762</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GESTIONS DES NOTES</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+
+                  QDialog {
+                      background-color: #5784BA;
+                      color: #212E53;
+                  }
+                  QLabel {
+                      color: #212E53;
+                      font-size:14px;
+                  }
+                  QTabWidget {
+                      background-color: #BED3C3;
+                      color: #212E53;
+                  }
+                  QGroupBox {
+                      background-color: #5784BA;
+                      color: #212E53;
+                      border: 1px solid #BED3C3;
+                      border-radius: 5px;
+                  }
+                  QLineEdit {
+                      background-color: #ff9999;
+                      color: #212E53;
+                      border: 1px solid #5784BA;
+                      border-radius: 3px;
+                  }
+                  QPushButton {
+                      background-color: #BED3C3;
+                      color: #212E53;
+                      border: 1px solid #212E53;
+                      border-radius: 3px;
+                      padding: 5px;
+                  }
+                  QPushButton:hover {
+                      background-color: #BED3C3;
+                  }
+                  QPushButton:pressed {
+                      background-color: #212E53;
+                  }
+                  QTableView {
+                      background-color: #ffeaa7;
+                      color: #212E53;
+                      border: 1px solid #5784BA;
+                      border-radius: 5px;
+                  }
+              </string>
+  </property>
+  <widget class="QLabel" name="label_menu">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>380</y>
+     <width>91</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Statue : </string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>621</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab_Etudiant">
+    <attribute name="title">
+     <string>ETUDIANT</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>621</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>CNE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_CNE">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>NOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Nom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>PRENOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_prenom"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="text">
+             <string>DATE DE NAISSANCE</string>
+            </property>
+            <property name="textFormat">
+             <enum>Qt::AutoText</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QDateTimeEdit" name="DN">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="wrapping">
+             <bool>false</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="buttonSymbols">
+             <enum>QAbstractSpinBox::PlusMinus</enum>
+            </property>
+            <property name="accelerated">
+             <bool>false</bool>
+            </property>
+            <property name="showGroupSeparator" stdset="0">
+             <bool>false</bool>
+            </property>
+            <property name="displayFormat">
+             <string>dd/MM/yyyy </string>
+            </property>
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QPushButton" name="pushButton">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_ajouter">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_modifier">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_supprimer">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_afficher">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Professeur">
+    <attribute name="title">
+     <string>ENSEIGNENT</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>621</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_CIN_2">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>NOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Nom_2"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>PRENOM</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_prenom_2"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>TELEPHONE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Telephone_2"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="pushButton_ajouter_2">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_modifier_2">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_supprimer_2">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_afficher_2">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_Matiere">
+    <attribute name="title">
+     <string>MATIERE</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>621</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_12">
+        <item>
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>ID MATIERE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_ID">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_13">
+        <item>
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>LIBELLE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Libelle"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_14">
+        <item>
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>COEFFICIENT</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Coeff"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_15">
+        <item>
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>ID PROF</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_CIN_3"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
+        <item>
+         <widget class="QPushButton" name="pushButton_ajouter_3">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_modifier_3">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_supprimer_3">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_afficher_3">
+          <property name="icon">
+           <iconset>
+            <normaloff>.</normaloff>.</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>10</y>
+     <width>421</width>
+     <height>741</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Picture">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>321</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

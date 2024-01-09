@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Note_Abs</class>
+ <widget class="QDialog" name="Note_Abs">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>364</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>GESTION DES NOTES</string>
+  </property>
+  <property name="styleSheet">
+   <string>
+                QDialog {
+                    background-color: #5784BA;
+                    color: #212E53;
+                }
+                QLabel {
+                    color: #212E53;
+                    font-size: 14px;
+                }
+                QWidget {
+                    background-color: #5784BA;
+                    color: #212E53;
+                }
+                QLineEdit {
+                    background-color: #ff9999;
+                    color: #212E53;
+                    border: 1px solid #5784BA;
+                    border-radius: 3px;
+                    padding: 5px;
+                }
+                QPushButton {
+                    background-color: #BED3C3;
+                    color: #212E53;
+                    border: 1px solid #212E53;
+                    border-radius: 3px;
+                    padding: 5px;
+                }
+                QPushButton:hover {
+                    background-color: #BED3C3;
+                }
+                QPushButton:pressed {
+                    background-color: #212E53;
+                }
+                QTableView {
+                    background-color: #ffeaa7;
+                    color: #212E53;
+                    border: 1px solid #5784BA;
+                    border-radius: 5px;
+                }
+            </string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>601</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>CONTROLE</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>571</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_16">
+        <item>
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>CNE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_CNE_Note">
+          <property name="inputMask">
+           <string/>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_17">
+        <item>
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>ID MATIERE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Id_Note"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_18">
+        <item>
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>NOTE</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="texte_Note"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>200</y>
+       <width>561</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_20">
+      <item>
+       <widget class="QPushButton" name="pushButton_modifier_4">
+        <property name="icon">
+         <iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ajouter_4">
+        <property name="icon">
+         <iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_supprimer_4">
+        <property name="icon">
+         <iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_afficher_4">
+        <property name="icon">
+         <iconset>
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>40</y>
+     <width>331</width>
+     <height>301</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
